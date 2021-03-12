@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import Cpp from "../componenets/Cpp";
-import Java from "../componenets/Java";
-import ProgrammingEditor from "../componenets/ProgrammingEditor";
-import Python from "../componenets/Python";
-import WebD from "../componenets/WebD";
+import Cpp from "../components/Cpp";
+import Java from "../components/Java";
+import ProgrammingEditor from "../components/ProgrammingEditor";
+import Python from "../components/Python";
+import WebD from "../components/WebD";
 import { AppContext } from "../context/AppContext";
 
 const Home = () => {

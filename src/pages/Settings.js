@@ -1,7 +1,7 @@
 import { MenuItem, Select, Slider, Switch } from "@material-ui/core";
 import React, { useContext } from "react";
 import { v4 as uuidv4 } from "uuid"; // to give random ids to the list items
-import Preview from "../componenets/Preview";
+import Preview from "../components/Preview";
 import { fonts, themes } from "../constants/constants";
 import { AppContext } from "../context/AppContext";
 

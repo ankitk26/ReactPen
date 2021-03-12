@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import Editor from "../componenets/Editor";
+import Editor from "../components/Editor";
 import { AppContext } from "../context/AppContext";
 
 const WebD = () => {

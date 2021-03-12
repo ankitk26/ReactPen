@@ -12,12 +12,12 @@ const ProgrammingEditor = ({ language }) => {
       <div className="input_output">
         <div className="input">
           <h1>Input</h1>
-          <textarea name="input" id="input" cols="30" rows="10" />
+          <textarea name="input" id="input" cols="30" rows="10" spellCheck={false} />
         </div>
 
         <div className="output">
           <h1>Output</h1>
-          <textarea name="output" id="output" cols="30" rows="10"></textarea>
+          <textarea name="output" id="output" cols="30" rows="10" spellCheck={false}></textarea>
         </div>
       </div>
     </div>

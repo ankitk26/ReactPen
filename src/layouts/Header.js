@@ -3,8 +3,8 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-import LanguageMenu from "../componenets/header/LanguageMenu";
-import OrientationMenu from "../componenets/header/OrientationMenu";
+import LanguageMenu from "../components/header/LanguageMenu";
+import OrientationMenu from "../components/header/OrientationMenu";
 import { AppContext } from "../context/AppContext";
 
 const Header = () => {

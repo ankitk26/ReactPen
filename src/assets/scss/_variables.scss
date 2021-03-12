@@ -1,0 +1,17 @@
+// Font
+$font: "Open Sans", sans-serif;
+
+// Colours
+$white: #f2f5ea;
+$darkGray: #1e1f26;
+$lightGray: #444857;
+$lighterGray: #5a6074;
+$black: #131417;
+
+// Mixins
+@mixin flexContainer($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

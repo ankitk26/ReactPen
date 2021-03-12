@@ -1,8 +1,5 @@
 import React, { useContext } from "react";
-import Cpp from "../components/Cpp";
-import Java from "../components/Java";
 import ProgrammingEditor from "../components/ProgrammingEditor";
-import Python from "../components/Python";
 import WebD from "../components/WebD";
 import { AppContext } from "../context/AppContext";
 

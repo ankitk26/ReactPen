@@ -3,7 +3,7 @@ A code editor app using React and TailwindCSS. In this app, the user can enter c
 
 This app uses React on client side, TailwindCSS and Material-UI for styling, and NodeJS and Express on server side.
 
-This app was developed as a project given in SMP 2021 by EEESoc. Deployed version can be viewed in the link below
+This app was developed as a project given in SMP 2021 by EEESoc. Deployed app can be viewed in the link below
 
 [Demo here](https://next-pen.vercel.app/)
 

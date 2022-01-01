@@ -2,12 +2,15 @@
   "name": "code_editor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server",
+  "type": "module",
   "scripts": {
     "start": "node server/server",
+    "serverInstall": "yarn",
     "server": "nodemon server/server",
-    "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client": "cd client && yarn start",
+    "clientInstall": "cd client && yarn",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "repository": {
     "type": "git",
@@ -22,12 +25,12 @@
   "homepage": "https://github.com/ankitk26/ReactPen#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^9.0.0",
-    "express": "^4.17.1",
-    "node-fetch": "^2.6.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "node-fetch": "^3.1.0"
   },
   "devDependencies": {
-    "concurrently": "^6.0.1",
-    "nodemon": "^2.0.7"
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.15"
   }
 }

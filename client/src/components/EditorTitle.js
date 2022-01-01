@@ -1,5 +1,4 @@
-import AddIcon from "@material-ui/icons/Add";
-import RemoveIcon from "@material-ui/icons/Remove";
+import { MdRemove, MdAdd } from "react-icons/md";
 import { useEditor } from "../context/AppContext";
 
 const EditorTitle = ({ language, editorOpen, setEditorOpen }) => {
@@ -30,9 +29,9 @@ const EditorTitle = ({ language, editorOpen, setEditorOpen }) => {
           onClick={() => toggleEditor()}
         >
           {editorOpen ? (
-            <RemoveIcon className="text-gray-200" />
+            <MdRemove className="text-xl text-gray-200" />
           ) : (
-            <AddIcon className="text-gray-200" />
+            <MdAdd className="text-xl text-gray-200" />
           )}
         </button>
       )}

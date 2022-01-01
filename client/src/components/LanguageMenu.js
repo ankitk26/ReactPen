@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { languages } from "../constants/constants";
 import { useEditor } from "../context/AppContext";
 import DropdownMenu from "./DropdownMenu";
+import { MdCode } from "react-icons/md";
 
 const LanguageMenu = () => {
   const { setLanguage } = useEditor();
@@ -53,7 +54,7 @@ const LanguageMenu = () => {
           className="flex items-center gap-2 px-4 py-2 rounded-md justify-evenly hover:text-textSecondary focus:outline-none"
           onClick={handleOpen}
         >
-          <span className="material-icons">code</span>
+          <MdCode className="text-xl" />
           <span className="text-sm">Languages</span>
         </button>
 
@@ -61,6 +62,7 @@ const LanguageMenu = () => {
           data={languages}
           handleChange={handleChange}
           isOpen={isOpen}
+          setIsOpen={setIsOpen}
         />
       </div>
     </div>

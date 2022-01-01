@@ -1,6 +1,6 @@
-import { Button } from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
+import Button from "@mui/material/Button";
 import { useEffect, useState } from "react";
+import { MdClose, MdSettings } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useEditor } from "../context/AppContext";
 import CssFrameworks from "./CssFrameworks";
@@ -33,7 +33,7 @@ export default function Modal() {
         className="flex items-center gap-2 px-4 py-2 rounded-md justify-evenly hover:text-textSecondary focus:outline-none"
         onClick={openModal}
       >
-        <span className="material-icons">settings</span>
+        <MdSettings className="text-xl" />
         <span className="text-sm">Settings</span>
       </button>
 
@@ -50,7 +50,7 @@ export default function Modal() {
                     className="p-1 text-3xl focus:outline-none"
                     onClick={closeModal}
                   >
-                    <CloseIcon className="text-textSecondary hover:text-white" />
+                    <MdClose className="text-xl text-textSecondary hover:text-white" />
                   </button>
                 </header>
 

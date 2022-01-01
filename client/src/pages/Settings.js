@@ -1,4 +1,4 @@
-import { Switch } from "@material-ui/core";
+import Switch from "@mui/material/Switch";
 import Dropdown from "../components/Dropdown";
 import FontSizeInput from "../components/FontSizeInput";
 import Preview from "../components/Preview";

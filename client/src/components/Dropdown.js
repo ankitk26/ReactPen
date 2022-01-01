@@ -1,5 +1,5 @@
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { useEffect, useRef, useState } from "react";
+import { MdExpandMore } from "react-icons/md";
 import DropdownMenu from "./DropdownMenu";
 
 const Dropdown = ({ data, value, handler }) => {
@@ -54,7 +54,7 @@ const Dropdown = ({ data, value, handler }) => {
         onClick={handleOpen}
       >
         <span className="mr-1 text-sm capitalize">{getValue()}</span>
-        <ExpandMoreIcon />
+        <MdExpandMore className="text-lg" />
       </button>
 
       <DropdownMenu data={data} handleChange={handleChange} isOpen={isOpen} />

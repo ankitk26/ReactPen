@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
 import { useEffect, useState } from "react";
 import Editor from "../components/Editor";
 import { useEditor } from "../context/AppContext";

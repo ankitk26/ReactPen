@@ -1,4 +1,5 @@
-import { AppBar, makeStyles, Tab, Tabs } from "@material-ui/core";
+import { AppBar, Tab, Tabs } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 import { cssPreview, htmlPreview, jsPreview } from "../constants/constants";
 import { useEditor } from "../context/AppContext";
@@ -28,7 +29,7 @@ const a11yProps = (index) => {
   };
 };
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles({
   root: {
     backgroundColor: "#161A23",
     shadow: "0",
@@ -42,7 +43,7 @@ const useStyles = makeStyles(() => ({
       outline: "none",
     },
   },
-}));
+});
 
 const Preview = () => {
   const classes = useStyles();

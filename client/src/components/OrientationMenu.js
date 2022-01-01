@@ -1,8 +1,11 @@
-import { Menu } from "@material-ui/core";
+import Menu from "@mui/material/Menu";
 import { useState } from "react";
-import bottom from "../assets/images/bottom-view.svg";
-import left from "../assets/images/column.svg";
-import right from "../assets/images/right.svg";
+import { MdViewAgenda } from "react-icons/md";
+import {
+  RiLayoutLeftLine,
+  RiLayoutRightLine,
+  RiLayoutTopLine,
+} from "react-icons/ri";
 import { useEditor } from "../context/AppContext";
 
 const OrientationMenu = () => {
@@ -29,7 +32,7 @@ const OrientationMenu = () => {
         className="flex items-center gap-2 px-4 py-2 rounded-md justify-evenly hover:text-textSecondary focus:outline-none"
         onClick={openOrientationMenu}
       >
-        <span className="material-icons">view_agenda</span>
+        <MdViewAgenda className="text-lg" />
         <span className="text-sm">Change View</span>
       </button>
 
@@ -46,21 +49,21 @@ const OrientationMenu = () => {
             className="cursor-pointer"
             onClick={() => handleAlignment("right")}
           >
-            <img src={right} className="w-8" alt="right" />
+            <RiLayoutLeftLine className="text-3xl text-white hover:text-gray-300" />
           </div>
 
           <div
             className="cursor-pointer"
             onClick={() => handleAlignment("bottom")}
           >
-            <img src={bottom} className="w-8" alt="bottom" />
+            <RiLayoutTopLine className="text-3xl text-white hover:text-gray-300" />
           </div>
 
           <div
             className="cursor-pointer"
             onClick={() => handleAlignment("left")}
           >
-            <img src={left} className="w-8" alt="left" />
+            <RiLayoutRightLine className="text-3xl text-white hover:text-gray-300" />
           </div>
         </div>
       </Menu>

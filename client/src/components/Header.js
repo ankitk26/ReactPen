@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import LanguageMenu from "../components/LanguageMenu";
-import OrientationMenu from "../components/OrientationMenu";
-import SettingsModal from "../components/SettingsModal";
+import LanguageMenu from "./LanguageMenu";
+import OrientationMenu from "./OrientationMenu";
+import SettingsModal from "./SettingsModal";
 import { useEditor } from "../context/AppContext";
 
 const Header = () => {

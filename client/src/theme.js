@@ -1,7 +1,7 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createTheme } from "@mui/material/styles";
 
 // Change primary color of MUI
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#F8333C",

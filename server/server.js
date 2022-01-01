@@ -1,20 +1,28 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const fetch = require("node-fetch");
-require("dotenv").config();
+import cors from "cors";
+import express, { json } from "express";
+import fetch from "node-fetch";
+import dotenv from "dotenv";
+dotenv.config();
 
-// Get the language text and version
-const { getLanguage } = require("./utils/getLanguage");
+// Create express app
+const app = express();
 
 // Middlewares
 app.use(cors());
-app.use(express.json());
+app.use(json());
+
+// Get language code and version according to JDoodle API
+const languagesMap = {
+  cpp: ["cpp14", "3"],
+  c: ["c", "3"],
+  java: ["java", "1"],
+  python: ["python3", "3"],
+};
 
 // Post request to create submission
 app.post("/api/submission", async (req, res) => {
   try {
-    const [language, versionIndex] = getLanguage(req.body.language);
+    const [language, versionIndex] = languagesMap[req.body.language];
 
     const inputParams = {
       ...req.body,
